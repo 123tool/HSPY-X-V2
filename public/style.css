@@ -1,0 +1,100 @@
+:root {
+    --bg: #0d0d0d;
+    --card: #1a1a1a;
+    --accent: #00FF41; /* Neon Green */
+    --border: #000000;
+    --text: #ffffff;
+    --shadow: #00FF41;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 20px;
+}
+
+.neo-card {
+    background: var(--card);
+    border: 4px solid var(--border);
+    box-shadow: 8px 8px 0px var(--border);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.header {
+    background: var(--accent);
+    color: black;
+    text-align: center;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 20px;
+}
+
+.neo-input {
+    width: 90%;
+    padding: 10px;
+    background: #000;
+    border: 3px solid var(--border);
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.neo-btn {
+    width: 100%;
+    padding: 15px;
+    background: var(--accent);
+    border: 3px solid var(--border);
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+    box-shadow: 4px 4px 0px var(--border);
+}
+
+.neo-btn:active {
+    box-shadow: 0px 0px 0px;
+    transform: translate(2px, 2px);
+}
+
+.neo-btn.secondary { background: #ff0055; color: white; }
+
+/* Terminal Style */
+.terminal {
+    background: #000;
+    height: 250px;
+    overflow-y: auto;
+    border-color: #333;
+}
+
+.term-header {
+    color: #333;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #333;
+}
+
+.log-area { font-size: 0.9rem; line-height: 1.4; }
+.info { color: cyan; }
+.success { color: var(--accent); }
+.error { color: #ff0055; }
+
+/* Results Grid */
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.res-card {
+    background: #222;
+    border-left: 5px solid var(--accent);
+    padding: 10px;
+    font-size: 0.85rem;
+    max-height: 200px;
+    overflow-y: auto;
+}
