@@ -32,12 +32,12 @@ sudo apt update && sudo apt install nodejs npm whois -y
 git clone [git clone [https://github.com/123tool/HSPY-X-V2.git](https://github.com/123tool/HSPY-X-V2.git)
 cd HSPY-X-V2
 termux-setup-storage
+pkg install wget -y
 npm install
 ```
 ## Setup Database Exploit-DB :
 ```
-mkdir -p data
-wget [https://raw.githubusercontent.com/offensive-security/exploitdb/master/files_exploits.csv](https://raw.githubusercontent.com/offensive-security/exploitdb/master/files_exploits.csv) -O data/exploits.csv
+wget https://raw.githubusercontent.com/offensive-security/exploitdb/master/files_exploits.csv -O data/exploits.csv
 ```
 ## Cara Menjalankan
 ​Cukup jalankan satu perintah :
