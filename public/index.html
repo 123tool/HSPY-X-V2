@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSPY-X-V2 | Intelligence Command</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="neo-card header">
+            <h1>HSPY-X-V2</h1>
+            <p>OSINT & RECONNAISSANCE COMMAND CENTER</p>
+        </header>
+
+        <div class="main-grid">
+            <aside class="neo-card sidebar">
+                <h3>TARGETING</h3>
+                <input type="text" id="targetInput" placeholder="example.com" class="neo-input">
+                
+                <h3>ENGINES</h3>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" class="engine" value="subdomain" checked> Subdomains</label>
+                    <label><input type="checkbox" class="engine" value="wayback" checked> Wayback Machine</label>
+                    <label><input type="checkbox" class="engine" value="whois" checked> Whois Lookup</label>
+                    <label><input type="checkbox" class="engine" value="dorks" checked> Google Dorks</label>
+                    <label><input type="checkbox" class="engine" value="edb" checked> Exploit-DB</label>
+                </div>
+
+                <button id="scanBtn" class="neo-btn">INITIALIZE SCAN</button>
+                <button id="downloadBtn" class="neo-btn secondary">EXPORT TXT</button>
+            </aside>
+
+            <main class="content">
+                <div class="neo-card terminal" id="terminal">
+                    <div class="term-header">SYSTEM_LOGS_v2.0</div>
+                    <div id="logs" class="log-area">Ready for command...</div>
+                </div>
+
+                <div id="resultsArea" class="results-grid">
+                    </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
