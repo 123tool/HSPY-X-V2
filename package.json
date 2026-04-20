@@ -1,7 +1,7 @@
 {
   "name": "hspy-x-v2",
   "version": "2.0.0",
-  "description": "Multi-Engine OSINT Intelligence Dashboard",
+  "description": "Multi-Engine OSINT Intelligence Dashboard by SPY-E",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
@@ -12,6 +12,6 @@
     "axios": "^1.6.2",
     "cheerio": "^1.0.0-rc.12",
     "csv-parser": "^3.0.0",
-    "colorama": "^1.0.1"
+    "colors": "^1.4.0"
   }
 }
